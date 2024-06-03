@@ -1,40 +1,46 @@
 body{
-  background-color:aqua;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
 }
 .main{
-  height: 430px;
+  height: 420px;
   width: 320px;
-  background-color: burlywood;
 }
 .upper{
-  height: 65px;
+  height: 45px;
   width: 320px;
-  background-color: brown;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 55px;
   font-size: 17px;
+  border: 2px solid black;
+  color: white;
+  background-color: rgb(39, 38, 38);
 }
 .main-lower{
   margin-top: 10px;
-  height: 350px;
+  height: 330px;
   width: 320px;
-  background-color: cornflowerblue;
+  border: 2px solid black;
+  color: white;
+  background-color: rgb(39, 38, 38);
+
 }
 .firstHalf{
   margin-top: 10px;
   display: flex;
   justify-content: center;
-  gap: 105px;
+  gap: 135px;
   font-size: 17px;
 }
 .pass{
   font-size: 20px;
   text-align: center;
+  margin-bottom: 10px;
+  color: darkgray;
 }
 .char{
   height: 20px;
@@ -52,7 +58,7 @@ body{
   margin-top: 10px;
 }
 .range{
-  width: 80%;
+  width: 90%;
 }
 
 .secondHalf{
@@ -61,4 +67,43 @@ body{
 }
 .check{
   margin-top: 10px;
+}
+.outer-inner-block{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+
+}
+.inner-block{
+  height: 40px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  gap:70px;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+.level{
+  height: 30px;
+  width:10px;
+  border: 2px solid white;
+  margin-left: 6px;
+}
+.out-level{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.generate{
+  width:90%;
+  background-color: lightgreen;
+}
+.strength{
+  color:darkgray
 }

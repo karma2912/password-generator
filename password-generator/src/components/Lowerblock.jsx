@@ -9,7 +9,7 @@ export default function Lowerblock() {
      Character Length
     </span>
     <span className="num-output">
-     num
+     
     </span>
       </div>
       <div className='container'>
@@ -22,6 +22,19 @@ export default function Lowerblock() {
       <input type='checkbox' className='check'/>Include Symbols<br/>
       <input type='checkbox' className='check'/>Include Numbers<br/>
         </div>
+        </div>
+        <div className='outer-inner-block'>
+        <div className='inner-block'>
+          <span className='strength'>STRENGTH</span>
+          <span className='out-level'>MEDIUM
+          <div className='level'></div>
+          <div className='level'></div>
+          <div className='level'></div>
+          </span>
+          </div>
+        </div>
+        <div className='btn'>
+        <button className='generate'>Generate</button>
         </div>
         </div>
      </>
