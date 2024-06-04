@@ -7,16 +7,12 @@ export default function Lowerblock() {
   const [lowerCase,setLowercase] = useState(false)
   const [symbo,setSymbo] = useState(false)
   const [numo,setNumo] = useState(false)
-  const [level,setLevel] = useState(
-    backgroundColor = "black"
-  )
+
   const handleRangeChange =(e)=>{
     setRangeValue(e.target.value)
     const rangeInput = document.getElementsByClassName("num-output")[0]
     rangeInput.innerHTML = rangeValue
   }
-  
-  console.log(rangeValue)
   const upperSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
   const lowerSet = "abcdefghijklmnopqrstuvwxyz"
   const symbols = "!@#$%^&*()_"
