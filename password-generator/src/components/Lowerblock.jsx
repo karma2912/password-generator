@@ -1,6 +1,12 @@
 import React from 'react'
-
+import { useState } from 'react'
 export default function Lowerblock() {
+  const [rangeValue, setRangeValue] = useState(10)
+  const handleRangeChange =(e)=>{
+    setRangeValue(e.target.value)
+    const rangeInput = document.getElementsByClassName("num-output")[0]
+    rangeInput.innerHTML = rangeValue
+  }
   return (
     <>
     <div className='main-lower'>
@@ -13,7 +19,13 @@ export default function Lowerblock() {
     </span>
       </div>
       <div className='container'>
-        <input type='range' className='range'></input>
+      <input type='range'
+      min=""
+      max="20"
+      value={rangeValue} 
+      step="1"
+      onChange={handleRangeChange}
+    />
         </div>
         <div className='secondHalf'>
      <div className='check-boxes'>

@@ -51,14 +51,16 @@ body{
 .num-output{
   margin-top: 10px;
   display: inline;
+  color: lightgreen
 }
 .container{
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
-.range{
+input[type='range']{
   width: 90%;
+  margin-top: 10px;
 }
 
 .secondHalf{
