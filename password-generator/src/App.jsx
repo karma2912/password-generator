@@ -9,7 +9,7 @@ function App() {
     <>
     <div className='main'>
       <div className="pass"><Password/></div>
-      <div className="upper"><Upperblock/></div>
+      {/* <div className="upper"><Upperblock/></div> */}
       <div className="lower"><Lowerblock/></div>
     </div>
     </>

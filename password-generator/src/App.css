@@ -51,7 +51,7 @@ body{
 .num-output{
   margin-top: 10px;
   display: inline;
-  color: lightgreen
+  color: lightgreen;
 }
 .container{
   display: flex;
