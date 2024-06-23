@@ -1,42 +1,111 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.main{
+  height: 420px;
+  width: 320px;
+}
+.upper{
+  height: 45px;
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+  font-size: 17px;
+  border: 2px solid black;
+  color: white;
+  background-color: rgb(39, 38, 38);
+}
+.main-lower{
+  margin-top: 10px;
+  height: 330px;
+  width: 320px;
+  border: 2px solid black;
+  color: white;
+  background-color: rgb(39, 38, 38);
+
+}
+.firstHalf{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 135px;
+  font-size: 17px;
+}
+.pass{
+  font-size: 20px;
   text-align: center;
+  margin-bottom: 10px;
+  color: darkgray;
+}
+.char{
+  height: 20px;
+  
+  margin-top: 10px;
+  display: inline;
+}
+.num-output{
+  margin-top: 10px;
+  display: inline;
+  color: lightgreen;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+input[type='range']{
+  width: 90%;
+  margin-top: 10px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.secondHalf{
+  margin-top: 15px;
+  margin-left: 10px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.check{
+  margin-top: 10px;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+.outer-inner-block{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.inner-block{
+  height: 40px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  gap:70px;
+  align-items: center;
+  background-color: black;
+  color: white;
 }
-
-.card {
-  padding: 2em;
+.level{
+  height: 30px;
+  width:10px;
+  border: 2px solid white;
+  margin-left: 6px;
 }
-
-.read-the-docs {
-  color: #888;
+.out-level{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.generate{
+  width:90%;
+  background-color: lightgreen;
+}
+.strength{
+  color:darkgray
 }
