@@ -1,39 +1,40 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import Upperblock from './Upperblock'
 
 export default function Lowerblock() {
-  const [rangeValue, setRangeValue] = useState(10)
+  const [rangeValue, setRangeValue] = useState(0)
   const [upperCase,setUppercase] = useState(false)
   const [lowerCase,setLowercase] = useState(false)
   const [symbo,setSymbo] = useState(false)
   const [numo,setNumo] = useState(false)
-  const [nun,setNun] = useState(false)
-
+  const [elevel,setElevel] = useState('black')
+  const [mlevel,setMlevel] = useState('black')
+  const [hlevel,setHlevel] = useState('black')
+  const [level,setlevel] = useState('EASY')
   const handleRangeChange =(e)=>{
     setRangeValue(e.target.value)
-    const rangeInput = document.getElementsByClassName("num-output")[0]
-    rangeInput.innerHTML = rangeValue
   }
   const upperSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
   const lowerSet = "abcdefghijklmnopqrstuvwxyz"
   const symbols = "!@#$%^&*()_"
   const numbers = "1234567890"
 
-  const funcUpper=(event)=>{
-    setUppercase(event.target.value)
+  const funcUpper=()=>{
+    setUppercase(!upperCase)
   }
-  const funcLower=(event)=>{
-    setLowercase(event.target.value)
+  const funcLower=()=>{
+    setLowercase(!lowerCase)
   }
   const funcSym=(event)=>{
-    setSymbo(event.target.value)
+    setSymbo(!symbo)
   }
   const funcNum=(event)=>{
-    setNumo(event.target.value)
+    setNumo(!numo)
   }
 
   const generatedata=(dataSet)=>{
+    console.log(dataSet.length)
    return dataSet[Math.floor(Math.random()*dataSet.length)]
   }
 
@@ -53,12 +54,14 @@ export default function Lowerblock() {
      if(password.length<=rangeValue){
       return generatePass(password)
      }
+     localStorage.setItem('rangeValue',rangeValue)
+     console.log(rangeValue)
      const finalPass = password.slice(0,rangeValue)
-     const output = document.getElementsByClassName("output")[0]
-     output.innerHTML = finalPass
+
+    console.log(finalPass)
+    localStorage.setItem("output",finalPass)
   }
  const buttonChanged=()=>{
-  console.log("Clicked")
   generatePass();
   setLowercase(false)
   setUppercase(false)
@@ -77,7 +80,7 @@ return (
      Character Length
     </span>
     <span id = "num-output" className="num-output">
-     10
+     {`${rangeValue}`}
     </span>
       </div>
       <div className='container'>
@@ -100,10 +103,7 @@ return (
         <div className='outer-inner-block'>
         <div className='inner-block'>
           <span className='strength'>STRENGTH</span>
-          <span className='out-level'>MEDIUM
-          <div className='level'></div>
-          <div className='level'></div>
-          <div className='level'></div>
+          <span className='out-level'>{`${rangeValue<=8?"Easy":"Moderate" && rangeValue>=15?"Hard":"Moderate"}`}
           </span>
           </div>
         </div>

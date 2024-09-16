@@ -86,11 +86,23 @@ input[type='range']{
   background-color: black;
   color: white;
 }
-.level{
-  height: 30px;
-  width:10px;
-  border: 2px solid white;
-  margin-left: 6px;
+.elevel{
+  height: 25px;
+  width:8px;
+  border: 1px solid white;
+  margin-left: 4px;
+}
+.mlevel{
+  height: 25px;
+  width:8px;
+  border: 1px solid white;
+  margin-left: 4px;
+}
+.hlevel{
+  height: 25px;
+  width:8px;
+  border: 1px solid white;
+  margin-left: 4px;
 }
 .out-level{
   display: flex;
