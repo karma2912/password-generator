@@ -34,7 +34,6 @@ export default function Lowerblock() {
   }
 
   const generatedata=(dataSet)=>{
-    console.log(dataSet.length)
    return dataSet[Math.floor(Math.random()*dataSet.length)]
   }
 
@@ -55,10 +54,7 @@ export default function Lowerblock() {
       return generatePass(password)
      }
      localStorage.setItem('rangeValue',rangeValue)
-     console.log(rangeValue)
      const finalPass = password.slice(0,rangeValue)
-
-    console.log(finalPass)
     localStorage.setItem("output",finalPass)
   }
  const buttonChanged=()=>{
